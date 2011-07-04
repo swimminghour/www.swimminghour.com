@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Swimming Hour | {{ page.title }}</title>
+	<link rel="alternate" type="application/atom+xml" title="Swimming Hour - Atom" href="http://feeds.feedburner.com/swimminghour.com" />
+	<link href='http://fonts.googleapis.com/css?family=Mako&v2' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/css/master.css" />
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js' type='text/javascript'></script>
+	<script src="/js/master.js"></script>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-2935139-18']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+		})();
+	</script>
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<p id="logo"><a href="/">Swimming Hour</a></p>
+			<nav>
+				<ul class="clearfix">
+					<li{% if page.title == 'About' %} class="selected"{% endif %}><a href="/about.html">About</a></li>
+					<li{% if page.title == 'Archive' %} class="selected"{% endif %}><a href="/archive.html">Archive</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section id="content-wrap">
+		<div class="container">
+
+		{{ content }}
+			
+		</div>
+	</section>
+
+	<footer class="container">
+		<p>Copyright &copy; {{ site.time | date: "%Y" }} <a href="mailto:swimminghour@gmail.com">Swimming Hour</a></p>
+	</div>
+</body>
+</html>
