@@ -11,7 +11,7 @@ layout: nil
 	<id>http://swimminghour.com/</id>
 	<author>
 		<name>Swimming Hour</name>
-		<email>swimminghour@gmail.com</email>
+		<email>rock@swimminghour.com</email>
 	</author>
 
 	{% for post in site.posts %}
