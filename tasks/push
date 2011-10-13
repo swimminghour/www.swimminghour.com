@@ -1,4 +1,4 @@
 #!/bin/bash
 
 jekyll
-s3cmd sync --acl-public --delete-removed _site/ s3://swimminghour.com
+s3cmd sync --acl-public --delete-removed _site/ s3://www.swimminghour.com
